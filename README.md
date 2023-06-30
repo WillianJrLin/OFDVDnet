@@ -1,10 +1,8 @@
 # OFDVDnet
-___
 A denoising algorithm for Poisson noise corrupted videos utilizing optical flow motion compensation and sensor fusion of a CMOS camera and a shot noise limited camera (such as SPAD camera).
 
 
 ## Overview
-___
 This repository contains the original code implementation for the paper ["OFDVDnet: A Sensor Fusion Approach for Video Denoising in Fluorescence-Guided Surgery" Medical Imaging with Deep Learning (2023)](https://openreview.net/forum?id=TcUtCXRcK8), as well as our in-house captured flourescence guilded surgery (FGS) dataset for training and evaluations. 
 
 OFDVDnet consists of two stages:
@@ -18,7 +16,6 @@ An overview of OFDVDnet's denoising pipeline is shown in the figure below.
 
 
 ## Environment Requirement
-___
   - Python 3
   - Pytorch
   - Numpy
@@ -27,17 +24,14 @@ ___
 
 
 ## Dataset
-___
 
 
 ## Usage
-___
 ### Step 1: Optical Flow Denoising
 ### Step 2: Neural Network Denoising
 
 
 ## Results
-___
 | SBR | OFDVDnet      | OFDV          | FastDVDnet    | V-BM4D        | Guided Filtering| Joint Bilateral |
 |:---:|     :---:     |     :---:     |     :---:     |     :---:     |      :---:      |      :---:      |
 | 0.1 | 29.3/.76/.88  | 10.8/.015/.20 | 24.3/.48/.83  | 19.7/.19/.52  | 16.4/.19/.69    | 15.8/.11/.59    |
@@ -60,4 +54,3 @@ ___
 > <img src="./figures/limits.png" width="500">
 
 ## License 
-___ 
