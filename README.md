@@ -1,5 +1,5 @@
 # OFDVDnet
-A denoising algorithm for Poisson noise corrupted videos utilizing optical flow motion compensation and sensor fusion of a CMOS camera and a shot noise limited camera (such as SPAD camera).
+A denoising algorithm for Poisson noise corrupted videos captured by a shot-noise limited camera (such as SPAD camera) utilizing optical flow motion compensation and sensor fusion of a CMOS camera and the shot noise limited camera.
 
 
 ## Overview
