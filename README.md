@@ -7,7 +7,7 @@ A denoising algorithm for Poisson noise corrupted videos utilizing optical flow 
 ___
 This repository contains the original code implementation for the paper ["OFDVDnet: A Sensor Fusion Approach for Video Denoising in Fluorescence-Guided Surgery" Medical Imaging with Deep Learning (2023)](https://openreview.net/forum?id=TcUtCXRcK8), as well as our in-house captured flourescence guilded surgery (FGS) dataset for training and evaluations. 
 
-OFDVDnet is a two-step video denoising algorithm consisting of the following:
+OFDVDnet consists of two stages:
   - Optical flow denoising 
   - Neural network denoising
 
@@ -44,10 +44,14 @@ ___
 | 0.5 | 34.0/.89/.93  | 21.5/.22/.52  | 30.8/.80/.88  | 29.9/.61/.86  | 28.1/.61/.86    | 26.3/.52/.81    |
 | 2.0 | 36.9/.92/.95  | 30.8/.72/.82  | 35.7/.89/.93  | 36.7/.88/.92  | 33.7/.90/.92    | 31.5/.85/.90    |
 
+> ### SBR = 0.1
+> ![vid323_01](./videos/vid323_01.gif)
 
+> ### SBR = 0.5
+> ![vid323_05](./videos/vid323_05.gif)
 
-https://github.com/WillianJrLin/OFDVDnet/assets/58122703/f0091381-dafd-4946-8c04-0853a0584328
-
+> ### SBR = 2.0
+> ![vid323_20](./videos/vid323_20.gif)
 
 
 > <img src="./figures/results.png" width="500">
