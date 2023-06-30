@@ -45,7 +45,8 @@ ___
 | 2.0 | 36.9/.92/.95  | 30.8/.72/.82  | 35.7/.89/.93  | 36.7/.88/.92  | 33.7/.90/.92    | 31.5/.85/.90    |
 
 
-![vid323_01](https://www.youtube.com/watch?v=m0wEeO6K4-E&list=PLyMBGD47PvgjNq__m8VCVDN1O9L8Jnpg2&index=3)
+
+https://github.com/WillianJrLin/OFDVDnet/assets/58122703/f0091381-dafd-4946-8c04-0853a0584328
 
 
 
