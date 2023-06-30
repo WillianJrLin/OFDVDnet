@@ -44,10 +44,10 @@ ___
 | 0.5 | 34.0/.89/.93  | 21.5/.22/.52  | 30.8/.80/.88  | 29.9/.61/.86  | 28.1/.61/.86    | 26.3/.52/.81    |
 | 2.0 | 36.9/.92/.95  | 30.8/.72/.82  | 35.7/.89/.93  | 36.7/.88/.92  | 33.7/.90/.92    | 31.5/.85/.90    |
 
-> <img src="./figures/results.png" width="700">
+> <img src="./figures/results.png" width="600">
 
 ### Limitations
-> <img src="./figures/limits.png" width="700">
+> <img src="./figures/limits.png" width="600">
 
 ## License 
 ___ 
