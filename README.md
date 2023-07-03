@@ -30,6 +30,7 @@ An overview of OFDVDnet's denoising pipeline is shown in the figure below.
 ### Step 1: Optical Flow Denoising
 1) Unzip data.zip
 2) run code/generate_OFDV.py
+   
    NOTE: this generates ~1TB of files to be used for training the NN. 
 
 ### Step 2: Neural Network Denoising
