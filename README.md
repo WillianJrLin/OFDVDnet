@@ -43,7 +43,7 @@ The in-house collected FGS dataset is stored in dataset.zip. The dataset contain
 | 0.5   | 34.0/.89/.93  | 21.5/.22/.52  | 30.8/.80/.88  | 29.9/.61/.86  | 28.1/.61/.86    | 26.3/.52/.81    |
 | 2.0   | 36.9/.92/.95  | 30.8/.72/.82  | 35.7/.89/.93  | 36.7/.88/.92  | 33.7/.90/.92    | 31.5/.85/.90    |
 
-><sub> * SBR is a self-defined parameter to describe noise level, lower SBR corresponds to noisier LLV. </sub>
+><sub> * SBR is a self-defined parameter to describe noise level, lower SBR corresponds to noisier LLV. Refer to paper for more details. </sub>
 
 Comparison of video results of OFDVDnet and FastDVDnet, V-BM4D at SBR = 0.1, 0.5 and 2.0. For more video results, please visit our [YouTube channel](https://www.youtube.com/@fgs_denoising/playlists) or download from our [Google Drive]({https://drive.google.com/drive/folders/1QarTJx4h7TiVlR2zekRwcmqoV9fRL8Je?usp=sharing)
 
