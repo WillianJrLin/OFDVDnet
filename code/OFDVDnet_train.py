@@ -27,7 +27,7 @@ import argparse
 from utils.model_ablation.model_fastDVD_onlume import unetTREE
 
 
-parser = argparse.ArgumentParser(description='OFDVDnet evaluation')
+parser = argparse.ArgumentParser(description='OFDVDnet training')
 parser.add_argument('--noiselevel', type=int, default=3, help='enter the noiselevel, default noiselevel = 3')
 parser.add_argument('--epochs', type=int, default=100, help='enter the number of training epochs, default number of epochs = 100')
 parser.add_argument('--dir', help='enter the parent directory of the directories /fl_gt, /fl_noise, /noise_map_est')
@@ -165,7 +165,7 @@ class FLIM_Videos(Dataset):
         return frame_stack_noisy, frame_stack_whiteLight, frame_stack_countsMap, frame_gt, vid_id, frame_id
     
 
-def train(model, device, loader, optimizer, Loss_fun, epoch):
+def train(model, device, loader, optimizer, Loss_fun, epoch, noiselevel):
     running_loss = 0.0
     loss = []
     model.train()
@@ -211,7 +211,7 @@ def train(model, device, loader, optimizer, Loss_fun, epoch):
     model_path = "./saved_model/fastDVD/ablation/"
     if not os.path.exists(os.path.dirname(model_path)):
         os.makedirs(os.path.dirname(model_path))      
-    torch.save(model.state_dict(), f"{model_path}saved_model_fastDVD_noiseLevel2.pt") 
+    torch.save(model.state_dict(), f"{model_path}saved_model_fastDVD_noiseLevel{noiselevel}.pt") 
   
     return running_loss
         
@@ -261,11 +261,11 @@ if __name__ == '__main__':
     
     for epoch in range(num_epochs):
         print("Epoch", epoch, flush=True)
-        train_loss = train(model, device, trainloader, optimizer, Loss_fun, epoch)
+        train_loss = train(model, device, trainloader, optimizer, Loss_fun, epoch, noiseLevel)
         loss_list.append(train_loss)
     
     rows = [loss_list]
-    filename = "training_ablation_record_fastdvd_noiseLevel2.csv" 
+    filename = f"training_record_fastdvd_noiseLevel{noiseLevel}.csv" 
     with open(filename, 'w') as csvfile: 
         csvwriter = csv.writer(csvfile) 
         csvwriter.writerows(rows)    

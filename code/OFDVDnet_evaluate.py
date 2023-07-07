@@ -259,7 +259,7 @@ if __name__ == '__main__':
     testLoader = DataLoader(test_set, batch_size = 1, shuffle=False, num_workers=0)
     
     model = unetTREE(input_frames_tree = num_frames_stack, input_frames_modUNET = input_frames_modUNET, channels_per_frame = channels_per_frame).float()
-    model.load_state_dict(torch.load('./saved_model/fastDVD/saved_model_fastDVD_noiseLevel3.pt'))
+    model.load_state_dict(torch.load(f"./saved_model/fastDVD/saved_model_fastDVD_noiseLevel{noiseLevel}.pt"))
     model = model.to(device)
     
     Loss_fun  = nn.MSELoss()
