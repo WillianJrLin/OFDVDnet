@@ -30,6 +30,7 @@ The in-house collected FGS dataset is stored in dataset.zip. The dataset contain
 ### Step 1:
 Download data from Google Drive using the following link:
 >https://drive.google.com/file/d/1ZFSXxlptYIQ_xnZM0E1EtR3xSYrI10RQ/view?usp=sharing
+
 We recommend placing /data immediately under /OFDVDnet such that the relative path to /data is: ./OFDVDnet/data/
 
 ### Step 2: Optical Flow Denoising
@@ -41,12 +42,14 @@ We recommend placing /data immediately under /OFDVDnet such that the relative pa
 ### Step 3: Neural Network Denoising
 1) Training:
 > python OFDVDnet_train.py
+
 Customizable prameters through commandline flags: nunber of training epochs, noise level, directory of input data.
 More information about available flags and default argument values:
 > python OFDVDnet_train.py -h
 
 2) Evaluation:
 > python OFDVDnet_evaluate.py
+
 Customizable prameters through commandline flags: nunber of training epochs, noise level, directory of input data.
 More information about available flags and default argument values:
 > python OFDVDnet_evaluate.py -h
