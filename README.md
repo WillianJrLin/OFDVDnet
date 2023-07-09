@@ -27,13 +27,29 @@ An overview of OFDVDnet's denoising pipeline is shown in the figure below.
 The in-house collected FGS dataset is stored in dataset.zip. The dataset contains aligned Reference Video (RV) and Low Light Video (LLV) video frames captured using a commercial FGS imaging system (OnLume Surgical, Madison, WI) in a simulated surgery based on the blue blood chicken model used in micro-surgical training. 
 
 ## Usage
-### Step 1: Optical Flow Denoising
+### Step 1:
+Download data from Google Drive using the following link:
+>https://drive.google.com/file/d/1ZFSXxlptYIQ_xnZM0E1EtR3xSYrI10RQ/view?usp=sharing
+We recommend placing /data immediately under /OFDVDnet such that the relative path to /data is: ./OFDVDnet/data/
+
+### Step 2: Optical Flow Denoising
 1) Unzip data.zip
 2) run code/generate_OFDV.py
    
    NOTE: this generates ~1TB of files to be used for training the NN. 
 
-### Step 2: Neural Network Denoising
+### Step 3: Neural Network Denoising
+1) Training:
+> python OFDVDnet_train.py
+Customizable prameters through commandline flags: nunber of training epochs, noise level, directory of input data.
+More information about available flags and default argument values:
+> python OFDVDnet_train.py -h
+
+2) Evaluation:
+> python OFDVDnet_evaluate.py
+Customizable prameters through commandline flags: nunber of training epochs, noise level, directory of input data.
+More information about available flags and default argument values:
+> python OFDVDnet_evaluate.py -h
 
 
 ## Results
