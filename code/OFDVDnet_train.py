@@ -30,7 +30,7 @@ from utils.model_ablation.model_fastDVD_onlume import unetTREE
 parser = argparse.ArgumentParser(description='OFDVDnet training')
 parser.add_argument('--noiseLevel', type=int, default=3, help='enter the noiselevel, default noiselevel = 3')
 parser.add_argument('--epochs', type=int, default=100, help='enter the number of training epochs, default number of epochs = 100')
-parser.add_argument('--dir', help='enter the parent directory of the directories /fl_gt, /fl_noise, /noise_map_est')
+parser.add_argument('--dir', default="../data", help='enter the parent directory of the directories /fl_gt, /fl_noise, /noise_map_est. Default = ../data')
 args = parser.parse_args()
 
 
