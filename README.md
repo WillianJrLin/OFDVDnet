@@ -3,7 +3,7 @@ A denoising algorithm for Poisson noise corrupted videos captured by a shot-nois
 
 
 ## Overview
-This repository contains the original code implementation for the paper ["OFDVDnet: A Sensor Fusion Approach for Video Denoising in Fluorescence-Guided Surgery" Medical Imaging with Deep Learning (2023)](https://openreview.net/pdf?id=TcUtCXRcK8), as well as the in-house captured flourescence guilded surgery (FGS) dataset for training and evaluations. 
+This repository contains the original code implementation for the paper ["OFDVDnet: A Sensor Fusion Approach for Video Denoising in Fluorescence-Guided Surgery" Medical Imaging with Deep Learning (2023)](https://proceedings.mlr.press/v227/seets24a.html), as well as the in-house captured flourescence guilded surgery (FGS) dataset for training and evaluations. 
 
 OFDVDnet is a two-step video denoising algorithm consisting of the following:
   - Optical flow denoising 
@@ -81,4 +81,20 @@ Comparison of video results of OFDVDnet and FastDVDnet, V-BM4D at SBR = 0.1, 0.5
 ### Limitations
 > <img src="./figures/limits.png" width="500">
 
-## License 
+## Citation
+
+@InProceedings{pmlr-v227-seets24a,
+  title = 	 {OFDVDnet: A Sensor Fusion Approach for Video Denoising in Fluorescence-Guided Surgery},
+  author =       {Seets, Trevor and Lin, Wei and Lu, Yizhou and Lin, Christie and Uselmann, Adam and Velten, Andreas},
+  booktitle = 	 {Medical Imaging with Deep Learning},
+  pages = 	 {1564--1580},
+  year = 	 {2024},
+  editor = 	 {Oguz, Ipek and Noble, Jack and Li, Xiaoxiao and Styner, Martin and Baumgartner, Christian and Rusu, Mirabela and Heinmann, Tobias and Kontos, Despina and Landman, Bennett and Dawant, Benoit},
+  volume = 	 {227},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {10--12 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v227/seets24a/seets24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v227/seets24a.html}
+}
+
