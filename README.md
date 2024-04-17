@@ -29,7 +29,7 @@ The in-house collected FGS dataset is stored in dataset.zip. The dataset contain
 ## Usage
 ### Step 1:
 Download data from Google Drive using the following link:
->https://drive.google.com/file/d/1ZFSXxlptYIQ_xnZM0E1EtR3xSYrI10RQ/view?usp=sharing
+>https://doi.org/10.5061/dryad.v6wwpzh3w
 
 We recommend placing /data immediately under /OFDVDnet such that the relative path to /data is: ./OFDVDnet/data/
 
